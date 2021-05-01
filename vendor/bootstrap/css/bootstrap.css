@@ -2548,6 +2548,12 @@ fieldset:disabled a.btn {
   border-color: #007bff;
 }
 
+.btn-remove {
+  color: #fff;
+  background-color:#dc3545;
+  border-color: #dc3545;
+}
+
 .btn-primary:hover {
   color: #fff;
   background-color: #0069d9;

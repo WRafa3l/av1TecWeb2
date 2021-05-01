@@ -138,6 +138,11 @@ $(document).ready(function () {
 		alert("Produto adicionado ao carrinho!");
 	}
 
+  function RemoveCarrinho(produto, qtd, valor, posicao){
+    localStorage.removeItem("produto" + posicao, produto);
+    alert ("Produto Removido do Carrinho");
+  }
+
  
 
 

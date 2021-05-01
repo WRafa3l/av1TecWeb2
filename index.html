@@ -105,14 +105,19 @@
    <img src="burgers/b4.jpeg" width="150" align="center"><br><br>
    Quantidade: <input type="number" class="quantidade" value="0" size="2" maxlength="3" min="0" max="10" step="1" id="qtd1"><br>
     Valor: <span class="preco">R$15,00</span><br>
-    <button class="btn btn-primary" type="button" id="produto1" onclick="AddCarrinho('Cheese Picanha Burger', document.getElementById('qtd1').value, '15.00', 1)"> Adicionar ao Carrinho </button><br><hr><br></li>
+    <button class="btn btn-primary" type="button" id="produto1" onclick="AddCarrinho('Cheese Picanha Burger', document.getElementById('qtd1').value, '15.00', 1)"> Adicionar ao Carrinho </button>
+
+    <button class="btn btn-primary" type="button" id="produto1" onclick="RemoveCarrinho('Cheese Picanha Burger', document.getElementById('qtd1').value, '15.00', 1)"> Remover Item </button>
+    <br><hr><br></li>
+
            
      <li><h5>Cheese Picanha Bacon</h5>
      <p>Hamburguer de Picanha, Pão integral, Bacon, Cheddar,Molho especial.</p>
      <img src="burgers/b2.jpeg" width="150" align="center"><br><br>
    Quantidade: <input type="number" class="quantidade" value="0" size="2" maxlength="2" min="0" max="10" step="1" id="qtd2"><br>
     Valor: <span class="preco">R$20,00</span><br>
-    <button class="btn btn-primary" type="button" id="produto2" onclick="AddCarrinho('Cheese Picanha Bacon', document.getElementById('qtd2').value, '20.00', 2)">Adicionar ao Carrinho</button><br>
+    <button class="btn btn-primary" type="button" id="produto2" onclick="AddCarrinho('Cheese Picanha Bacon', document.getElementById('qtd2').value, '20.00', 2)">Adicionar ao Carrinho</button>
+    <button class="btn btn-primary" type="button" id="produto2" onclick="RemoveCarrinho('Cheese Picanha Bacon', document.getElementById('qtd2').value, '20.00', 2)">Remover Item</button><br>
      <hr><br></li>
      
      <li><h5>Americano</h5>
@@ -120,7 +125,8 @@
      <img src="burgers/b6.jpeg" width="150" align="center"><br><br>
     Quantidade: <input type="number" class="quantidade" value="0" size="2" maxlength="3" min="0" max="10" step="1" id="qtd3"><br>
      Valor: <span class="preco">R$20,00</span><br>
-     <button class="btn btn-primary" type="button" id="produto3" onclick="AddCarrinho('Americano', document.getElementById('qtd3').value, '20.00', 3)">Adicionar ao Carrinho</button><br>
+     <button class="btn btn-primary" type="button" id="produto3" onclick="AddCarrinho('Americano', document.getElementById('qtd3').value, '20.00', 3)">Adicionar ao Carrinho</button>
+     <button class="btn btn-primary" type="button" id="produto3" onclick="RemoveCarrinho('Americano', document.getElementById('qtd3').value, '20.00', 3)">Remover Item</button><br>
      <hr><br></li>
      
      <!-- /COMPLEMENTOS -->
@@ -131,7 +137,8 @@
     <img src="burgers/batata.jpg" width="150" align="center"><br><br>
    Quantidade: <input type="number" class="quantidade" value="0" size="2" maxlength="3" min="0" max="10" step="1" id="qtd4"><br>
     Valor: <span class="preco">R$15,00</span><br>
-    <button class="btn btn-primary" type="button" id="produto4" onclick="AddCarrinho('Porção de Batata GG', document.getElementById('qtd4').value, '15.00', 4)">Adicionar ao Carrinho</button><br>
+    <button class="btn btn-primary" type="button" id="produto4" onclick="AddCarrinho('Porção de Batata GG', document.getElementById('qtd4').value, '15.00', 4)">Adicionar ao Carrinho</button>
+    <button class="btn btn-primary" type="button" id="produto4" onclick="RemoveCarrinho('Porção de Batata GG', document.getElementById('qtd4').value, '15.00', 4)">Remove Item</button><br>
    <hr><br></li>
    
     <li>       
@@ -140,7 +147,8 @@
     <img src="burgers/tiradefrango.jpg" width="150" align="center"><br><br>
    Quantidade: <input type="number" class="quantidade" value="0" size="2" maxlength="3" min="0" max="10" step="1" id="qtd5"><br>
     Valor: <span class="preco">R$20,00</span><br>
-    <button class="btn btn-primary" type="button" id="produto5" onclick="AddCarrinho('Tirinhas de frango', document.getElementById('qtd5').value, '20.00', 5)">Adicionar ao Carrinho</button><br>
+    <button class="btn btn-primary" type="button" id="produto5" onclick="AddCarrinho('Tirinhas de frango', document.getElementById('qtd5').value, '20.00', 5)">Adicionar ao Carrinho</button>
+    <button class="btn btn-primary" type="button" id="produto5" onclick="RemoveCarrinho('Tirinhas de frango', document.getElementById('qtd5').value, '20.00', 5)">Remove Item</button><br>
     <hr><br></li>
 
     <li><h5>Batata Maluca</h5>
@@ -148,7 +156,8 @@
     <img src="burgers/batatamaluca.jpg" width="150" align="center"><br><br>
    Quantidade: <input type="number" class="quantidade" value="0" size="2" maxlength="3" min="0" max="10" step="1" id="qtd6"><br>
     Valor: <span class="preco">R$20,00</span><br>
-    <button class="btn btn-primary" type="button" id="produto6" onclick="AddCarrinho('Batata Maluca', document.getElementById('qtd6').value, '20.00', 6)">Adicionar ao Carrinho</button><br>
+    <button class="btn btn-primary" type="button" id="produto6" onclick="AddCarrinho('Batata Maluca', document.getElementById('qtd6').value, '20.00', 6)">Adicionar ao Carrinho</button>
+    <button class="btn btn-primary" type="button" id="produto6" onclick="RemoveCarrinho('Batata Maluca', document.getElementById('qtd6').value, '20.00', 6)">Remove Item</button><br>
     
     <hr><br>      </li>
 
@@ -166,15 +175,16 @@
     <option>Guarana Antártica</option>
     </select><br>
      Valor: <span class="preco">R$5,00</span><br>
-     <button class="btn btn-primary" type="button" id="produto7" onclick="AddCarrinho('Refrigerante 350Ml', document.getElementById('qtd7').value, '5.00', 7)">Adicionar ao Carrinho</button><br>
+     <button class="btn btn-primary" type="button" id="produto7" onclick="AddCarrinho('Refrigerante 350Ml', document.getElementById('qtd7').value, '5.00', 7)">Adicionar ao Carrinho</button>
+     <button class="btn btn-primary" type="button" id="produto7" onclick="RemoveCarrinho('Refrigerante 350Ml', document.getElementById('qtd7').value, '5.00', 7)">Remove Item</button><br>
         <hr><br></li>
     
-    <li>
+    <!-- <li>
     <h5>Suco Dell Vale Sabores</h5>
     <p>Suco dell vale caixa gelado.</p>
     <img src="burgers/suco.jpg" width="150" align="center">
     <br>
-    Quantidade: <input type="number" class="quantidade" value="0" size="2" maxlength="3" min="0" max="10" step="1" id"qtd10"><br>
+    Quantidade: <input type="number" class="quantidade" value="0" size="2" maxlength="3" min="0" max="10" step="1" id"qtd7"><br>
     <select id=cbPais>
     <option>Selecione o sabor</option>
     <option>Laranja</option>
@@ -183,11 +193,10 @@
     <option>Uva</option>
     </select><br>
     Valor: <span class="preco">R$7,00</span><br>
-    <button class="btn btn-primary" type="button" id="produto10" onclick="AddCarrinho('Suco Dell Vale', document.getElementById('qtd10').value, '7.00', 10)">Adicionar ao Carrinho</button>
+    <button class="btn btn-primary" type="button" id="produto8" onclick="AddCarrinho('Dell Vale', document.getElementById('qtd8').value, '7.00', 8)">Adicionar ao Carrinho</button>
+    <button class="btn btn-primary" type="button" id="produto8" onclick="RemoveCarrinho('Dell Vale', document.getElementById('qtd7').value, '7.00', 8)">Remove Item</button>
     <br>
-    
-    
-    <hr><br></li>    
+    <hr><br></li>    -->
     
     <li>
     <h5>Refrigerante 2 Litros</h5>
@@ -201,7 +210,8 @@
     <option>Guarana Antártica</option>
     </select><br>
     Valor: <span class="preco">R$10,00</span><br>
-    <button class="btn btn-primary" type="button" id="produto9" onclick="AddCarrinho('Refrigerante 2 Litros', document.getElementById('qtd9').value, '10.00', 9)">Adicionar ao Carrinho</button><br>
+    <button class="btn btn-primary" type="button" id="produto9" onclick="AddCarrinho('Refrigerante 2 Litros', document.getElementById('qtd9').value, '10.00', 9)">Adicionar ao Carrinho</button>
+    <button class="btn btn-primary" type="button" id="produto9" onclick="RemoveCarrinho('Refrigerante 2 Litros', document.getElementById('qtd9').value, '10.00', 9)">Remove Item</button><br>
     
     <hr><br></li>       
     <table align=center><tr>
