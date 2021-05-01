@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <title>G King Burger</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/modern-business.css" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">G King Burger</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+           <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Menu
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+              <a class="dropdown-item" href="historia.html">Nossa História</a>
+              <a class="dropdown-item" href="contato.html">Contato</a>
+              </div>
+          </li>
+            
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <!-- Slide One - Set the background image for this slide in the line below -->
+        <div class="carousel-item active" style="background-image: url('burgers/gkingbg.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            </div>
+        </div>
+        <!-- Slide Two - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('burgers/gkingbg.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            </div>
+        </div>
+        <!-- Slide Three - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('burgers/gkingbg.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <h1 class="my-4">Cardápio</h1>
+<body>
+
+<h3>Busca de Itens</h3>
+<input id="myInput" type="text" size="30" placeholder="Digite aqui...">
+<br><br>
+
+<ul id="myList">
+   <!-- Hamburgers -->
+   <li><h3>Hamburgers</h3>
+   <hr></li>
+   <li><h5>Cheese Picanha Burger</h5>
+   <p>Hamburguer de Picanha, Pão integral, Cheddar,Molho especial.</p>
+   <img src="burgers/b4.jpeg" width="150" align="center"><br><br>
+   Quantidade: <input type="number" class="quantidade" value="0" size="2" maxlength="3" min="0" max="10" step="1" id="qtd1"><br>
+    Valor: <span class="preco">R$15,00</span><br>
+    <button class="btn btn-primary" type="button" id="produto1" onclick="AddCarrinho('Cheese Picanha Burger', document.getElementById('qtd1').value, '15.00', 1)"> Adicionar ao Carrinho </button><br><hr><br></li>
+           
+     <li><h5>Cheese Picanha Bacon</h5>
+     <p>Hamburguer de Picanha, Pão integral, Bacon, Cheddar,Molho especial.</p>
+     <img src="burgers/b2.jpeg" width="150" align="center"><br><br>
+   Quantidade: <input type="number" class="quantidade" value="0" size="2" maxlength="2" min="0" max="10" step="1" id="qtd2"><br>
+    Valor: <span class="preco">R$20,00</span><br>
+    <button class="btn btn-primary" type="button" id="produto2" onclick="AddCarrinho('Cheese Picanha Bacon', document.getElementById('qtd2').value, '20.00', 2)">Adicionar ao Carrinho</button><br>
+     <hr><br></li>
+     
+     <li><h5>Americano</h5>
+     <p>Hamburguer 90g, Pão Careca ou Gergilin, Alface, tomate, Molho especial, Batata Cheddar e Bacon.</p>
+     <img src="burgers/b6.jpeg" width="150" align="center"><br><br>
+    Quantidade: <input type="number" class="quantidade" value="0" size="2" maxlength="3" min="0" max="10" step="1" id="qtd3"><br>
+     Valor: <span class="preco">R$20,00</span><br>
+     <button class="btn btn-primary" type="button" id="produto3" onclick="AddCarrinho('Americano', document.getElementById('qtd3').value, '20.00', 3)">Adicionar ao Carrinho</button><br>
+     <hr><br></li>
+     
+     <!-- /COMPLEMENTOS -->
+     <li><h3>Complementos</h3>
+     <br></li>
+     <li><h5>Porção de Batata GG</h5>
+    <p>Porção de Batata 500GR.</p>
+    <img src="burgers/batata.jpg" width="150" align="center"><br><br>
+   Quantidade: <input type="number" class="quantidade" value="0" size="2" maxlength="3" min="0" max="10" step="1" id="qtd4"><br>
+    Valor: <span class="preco">R$15,00</span><br>
+    <button class="btn btn-primary" type="button" id="produto4" onclick="AddCarrinho('Porção de Batata GG', document.getElementById('qtd4').value, '15.00', 4)">Adicionar ao Carrinho</button><br>
+   <hr><br></li>
+   
+    <li>       
+    <h5>Tirinhas de Frango</h5>
+    <p class="card-text">Porção com 15 Tirinhas de frango.</p>
+    <img src="burgers/tiradefrango.jpg" width="150" align="center"><br><br>
+   Quantidade: <input type="number" class="quantidade" value="0" size="2" maxlength="3" min="0" max="10" step="1" id="qtd5"><br>
+    Valor: <span class="preco">R$20,00</span><br>
+    <button class="btn btn-primary" type="button" id="produto5" onclick="AddCarrinho('Tirinhas de frango', document.getElementById('qtd5').value, '20.00', 5)">Adicionar ao Carrinho</button><br>
+    <hr><br></li>
+
+    <li><h5>Batata Maluca</h5>
+    <p>Batata, Calabresa, Cheddar e Bacon.</p>
+    <img src="burgers/batatamaluca.jpg" width="150" align="center"><br><br>
+   Quantidade: <input type="number" class="quantidade" value="0" size="2" maxlength="3" min="0" max="10" step="1" id="qtd6"><br>
+    Valor: <span class="preco">R$20,00</span><br>
+    <button class="btn btn-primary" type="button" id="produto6" onclick="AddCarrinho('Batata Maluca', document.getElementById('qtd6').value, '20.00', 6)">Adicionar ao Carrinho</button><br>
+    
+    <hr><br>      </li>
+
+    <!-- /BEBIDAS -->
+    <li><h3>Bebidas</h3>
+    <br></li>
+    <li><h5>Refrigerante 350Ml</h5>
+    <p>Refrigerante lata gelado.</p>
+    <img src="burgers/refrigerante350.jpg" width="150" align="center">
+    <br><br>
+   Quantidade: <input type="number" class="quantidade" value="0" size="2" maxlength="3" min="0" max="10" step="1" id="qtd7"><br>
+   <select id=cbPais>
+    <option>Selecione o sabor</option>
+    <option>Coca-Cola</option>
+    <option>Guarana Antártica</option>
+    </select><br>
+     Valor: <span class="preco">R$5,00</span><br>
+     <button class="btn btn-primary" type="button" id="produto7" onclick="AddCarrinho('Refrigerante 350Ml', document.getElementById('qtd7').value, '5.00', 7)">Adicionar ao Carrinho</button><br>
+        <hr><br></li>
+    
+    <li>
+    <h5>Suco Dell Vale Sabores</h5>
+    <p>Suco dell vale caixa gelado.</p>
+    <img src="burgers/suco.jpg" width="150" align="center">
+    <br>
+    Quantidade: <input type="number" class="quantidade" value="0" size="2" maxlength="3" min="0" max="10" step="1" id"qtd10"><br>
+    <select id=cbPais>
+    <option>Selecione o sabor</option>
+    <option>Laranja</option>
+    <option>Manga</option>
+    <option>Pêssego</option>
+    <option>Uva</option>
+    </select><br>
+    Valor: <span class="preco">R$7,00</span><br>
+    <button class="btn btn-primary" type="button" id="produto10" onclick="AddCarrinho('Suco Dell Vale', document.getElementById('qtd10').value, '7.00', 10)">Adicionar ao Carrinho</button>
+    <br>
+    
+    
+    <hr><br></li>    
+    
+    <li>
+    <h5>Refrigerante 2 Litros</h5>
+    <p>Refrigerante gelado.</p>
+    <img src="burgers/refrigerante2l.jpg" width="150" align="center">
+    <br>
+    Quantidade: <input type="number" class="quantidade" value="0" size="2" maxlength="3" min="0" max="10" step="1" id="qtd9"><br>
+    <select id=cbPais>
+    <option>Selecione o sabor</option>
+    <option>Coca-Cola</option>
+    <option>Guarana Antártica</option>
+    </select><br>
+    Valor: <span class="preco">R$10,00</span><br>
+    <button class="btn btn-primary" type="button" id="produto9" onclick="AddCarrinho('Refrigerante 2 Litros', document.getElementById('qtd9').value, '10.00', 9)">Adicionar ao Carrinho</button><br>
+    
+    <hr><br></li>       
+    <table align=center><tr>
+    <td><h3>Total do pedido: </h3></td>
+    <td><h3><div id="total">R$ 00,90</div></h3></td>
+    </tr></table>
+    <div width="100%" align=center class="card-footer">   
+            <a href="carrinho.html" class="btn btn-primary">Finalizar pedido.</a>
+          </div>
+    
+  <!-- Footer -->
+    
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; G King Burger 2021</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+  
+  
+    </div>
+    <script src= "carrinhofuncoes.js"></script>
+    
+</body>
+
+</html>

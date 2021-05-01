@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <title>G King Burger</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/modern-business.css" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">G King Burger</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+           <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Menu
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+              <a class="dropdown-item" href="portfolio-1-col.html">Nossa História</a>
+              <a class="dropdown-item" href="portfolio-2-col.html">Contato</a>
+              </div>
+          </li>
+            
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <!-- Slide One - Set the background image for this slide in the line below -->
+        <div class="carousel-item active" style="background-image: url('burgers/gkingbg.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            </div>
+        </div>
+        <!-- Slide Two - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('burgers/gkingbg.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            </div>
+        </div>
+        <!-- Slide Three - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('burgers/gkingbg.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div align=center><h1 class="my-4">Carrinho de Compras</h1>
+    </div>
+<body>
+<!-- COMEÇO CARRINHO-->
+<h3>Itens</h3><table><tr><td>
+<div id="itens"></div></td>
+<td><div id="remover"></div></td>
+<div>Total do pedido: <span id="totalf"></span> </div>
+
+<script>
+ var totalf = 0; // variável que retorna o total dos produtos que estão na LocalStorage.
+ var i = 0;     // variável que irá percorrer as posições
+ var valor = 0; // variável que irá receber o preço do produto convertido em Float.
+ 
+ for(i=1; i<=99; i++) // verifica até 99 produtos registrados na localStorage
+ {
+	 var prod = localStorage.getItem("produto" + i + ""); // verifica se há recheio nesta posição. 
+	 if(prod != null) 
+	 {	
+		 // exibe os dados da lista dentro da div itens
+		 document.getElementById("itens").innerHTML += localStorage.getItem("qtd" + i) + " x ";
+		 document.getElementById("itens").innerHTML += localStorage.getItem("produto" + i);
+		 document.getElementById("itens").innerHTML += " ";
+		 document.getElementById("itens").innerHTML += "- R$ " + localStorage.getItem("valor" + i) + "<hr>";
+     
+     // calcula o total dos recheios
+		 valor = parseFloat(localStorage.getItem("valor" + i)); // valor convertido com o parseFloat()
+		 totalf = (totalf + valor); // arredonda para 2 casas decimais com o .toFixed(2)
+	  }
+  }
+ // exibe o total dos recheios
+ document.getElementById("totalf").innerHTML = totalf.toFixed(2); 
+</script>
+ 
+<hr>
+<table align=center><tr>
+  <td><a href="index.html" class="btn btn-primary">Continuar Comprando</a></td>
+<td><button class="btn btn-primary type="button" onclick=" localStorage.clear(); location.reload();
+"> Limpar carrinho </button></td></table>
+    <hr><br></li>     
+    <td></td></table>
+    <hr><br></li>     
+    
+  <hr>
+  <!-- fim carrinho-->
+<h4>Endereço de Entrega</h4><br>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous">
+  </script>
+
+    <body>
+    
+      <form method="get" action=".">
+        <label>   Nome:
+        <input name="nome" type="text" id="nome" size="20" /></label>
+        <label>Cep:
+        <input name="cep" type="text" id="cep" value="" size="10" maxlength="9" /></label><br>
+        <label>Rua:
+        <input name="rua" type="text" id="rua" size="20" /></label>
+        <label>   Número:
+        <input name="numero" type="text" id="numero" size="4" /></label>
+        <label>   Bairro:
+        <input name="bairro" type="text" id="bairro" size="20" /></label><br />
+             
+      </form>   
+      <hr><br>
+  <h4>Forma de pagamento</h4><br>
+  <div class="wrapper">
+    <div class="form-group">
+      <input class="radio" name="theradio" id="radio1" type='radio' checked />
+      <label for="radio1"> Dinheiro</label>
+    </div>
+    <div class="form-group">
+      <input class="radio" name="theradio" id="radio2" type='radio' />
+      <label for="radio2">Cartão de Crédito</label>
+    </div>
+    <div class="form-group">
+        <input class="radio" name="theradio" id="radio3" type='radio' />
+        <label for="radio3">Cartão de Débito</label>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+<div width="100%" align=center class="card-footer">   
+            <a href="#" class="btn btn-primary">Confirmar Compra.</a>
+          </div>
+    
+
+
+    
+  <!-- Footer -->
+    
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; G King Burger 2021</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+  
+  
+    </div>
+    <script src= "carrinhofuncoes.js"></script>
+    
+</body>
+
+</html>
+<meta charset="UTF-8">
+

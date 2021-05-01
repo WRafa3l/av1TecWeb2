@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <title>G King Burger</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/modern-business.css" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myList li").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">G King Burger</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Menu
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+              <a class="dropdown-item" href="portfolio-1-col.html">Nossa História</a>
+              <a class="dropdown-item" href="portfolio-2-col.html">Contato</a>
+              </div>
+          </li>
+            
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <!-- Slide One - Set the background image for this slide in the line below -->
+        <div class="carousel-item active" style="background-image: url('burgers/gkingbg.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            </div>
+        </div>
+        <!-- Slide Two - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('burgers/gkingbg.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            </div>
+        </div>
+        <!-- Slide Three - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('burgers/gkingbg.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <h1 class="my-4">Cardápio</h1>
+<body>
+<img src='http://www.datatables.net/media/images/DataTables.jpg' id='imagem'>
+<h3>Busca de Itens</h3>
+<input id="myInput" type="text" placeholder="Search..">
+<br><br>
+<div class="col-lg-4 mb-4">
+<ul id="myList">
+    <table><tr>
+
+    <!-- Hamburgers -->
+    <h3>Hamburgers</h3>
+    <div class="row">
+      <td><li>
+        <div class="card h-100">
+          <h5 class="card-header">Cheese Picanha Burger</h5>
+          <div class="card-body">
+            <p class="card-text">Hamburguer de Picanha, Pão integral, Cheddar,Molho especial.</p><br>
+            <div>
+            <img src="burgers/b4.jpeg" width="250" align="center">
+            </div>
+          </div>
+          <div class="card-body">
+            <p> Valor: R$15,00</p>
+            </div>
+
+          <div class="card-footer">   
+            <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+          </div>
+        </div>
+      </div></li></td>
+      
+      <td><li>
+        <div class="card h-100">
+          <h5 class="card-header">Cheese Picanha Bacon</h5>
+          <div class="card-body">
+            <p class="card-text">Hamburguer de Picanha, Pão integral, Bacon, Cheddar,Molho especial.</p>
+            <div><img src="burgers/b2.jpeg" width="250" align="center">
+            </div>
+          </div>
+          <div class="card-body">
+            <p> Valor: R$20,00</p>
+            </div>
+
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+          </div>
+        </div>
+      </div></li></td>
+      <td><li>
+        <div class="card h-100">
+          <h5 class="card-header">Americano</h5>
+          <div class="card-body">
+            <p class="card-text">Hamburguer 90g, Pão Careca ou Gergilin, Alface, tomate, Molho especial, Batata Cheddar e Bacon.</p>
+            <img src="burgers/b6.jpeg" width="250" align="center">
+            
+          </div>
+          <div class="card-body">
+            <p> Valor: R$20,00</p>
+            </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+          </div>
+        </div>
+      </div>
+    </div></li></td>
+    </tr>
+
+    <!-- /COMPLEMENTOS -->
+    <div class="row">
+      <tr><td><li>
+        <div class="card h-100">
+          <h5 class="card-header">Porção de Batata GG</h5>
+          <div class="card-body">
+            <p class="card-text">Hamburguer de Picanha, Pão integral, Cheddar,Molho especial.</p><br>
+            <div>
+            <img src="burgers/b4.jpeg" width="250" align="center">
+            </div>
+          </div>
+          <div class="card-body">
+            <p> Valor: R$15,00</p>
+            </div>
+
+          <div class="card-footer">   
+            <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+          </div>
+        </div>
+      </div></li></td>
+      
+      <td><li>
+        <div class="card h-100">
+          <h5 class="card-header">Cheese Picanha Bacon</h5>
+          <div class="card-body">
+            <p class="card-text">Hamburguer de Picanha, Pão integral, Bacon, Cheddar,Molho especial.</p>
+            <div><img src="burgers/b2.jpeg" width="250" align="center">
+            </div>
+          </div>
+          <div class="card-body">
+            <p> Valor: R$20,00</p>
+            </div>
+
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+          </div>
+        </div>
+      </div></li></td>
+      <td><li>
+        <div class="card h-100">
+          <h5 class="card-header">Americano</h5>
+          <div class="card-body">
+            <p class="card-text">Hamburguer 90g, Pão Careca ou Gergilin, Alface, tomate, Molho especial, Batata Cheddar e Bacon.</p>
+            <img src="burgers/b6.jpeg" width="250" align="center">
+            
+          </div>
+          <div class="card-body">
+            <p> Valor: R$20,00</p>
+            </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+          </div>
+        </div>
+      </div>
+    </div></li></td></tr>
+
+    <!-- /BEBIDAS -->
+    <div class="row">
+      <tr><td><li>
+        <div class="card h-100">
+          <h5 class="card-header">Refrigerante 350Ml</h5>
+          <div class="card-body">
+            <p class="card-text">Refrigerante lata gelado.</p>
+            <div>
+            <img src="burgers/b4.jpeg" width="250" align="center">
+            </div>
+          </div>
+          <div class="card-body">
+            <select id=cbPais>
+              <option>Selecione</option>
+              <option>Coca-Cola</option>
+              <option>Guarana Antártica</option>
+              </select>
+              <p> Valor: R$5,00</p>
+            </div>
+
+          <div class="card-footer">   
+            <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+          </div>
+        </div>
+      </div></li></td>
+      
+      <td><li>
+        <div class="card h-100">
+          <h5 class="card-header">Suco Dell Vale Sabores</h5>
+          <div class="card-body">
+            <p class="card-text">Suco dell vale caixa gelado.</p>
+            <div><img src="burgers/b2.jpeg" width="250" align="center">
+            </div>
+          </div>
+          <div class="card-body">
+            <select id=cbPais>
+              <option>Selecione</option>
+              <option>Laranja</option>
+              <option>Manga</option>
+              <option>Pêssego</option>
+              <option>Uva</option>
+              </select>
+            <p> Valor: R$7,00</p>
+            </div>
+
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+          </div>
+        </div>
+      </div></li></td>
+      <td><li>
+        <div class="card h-100">
+          <h5 class="card-header">Refrigerante 2 Litros</h5>
+          <div class="card-body">
+            <p class="card-text">Refrigerante gelado.</p>
+            <img src="burgers/b6.jpeg" width="250" align="center">
+            
+          </div>
+          <div class="card-body">
+            <select id=cbPais>
+              <option>Selecione</option>
+              <option>Coca-Cola</option>
+              <option>Guarana Antártica</option>
+              </select>
+            <p> Valor: R$10,00</p>
+            </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+          </div>
+        </div>
+      </div>
+    </div></li></td></tr>
+    </table>
+    <!-- /.row -->
+
+    <!-- /.row -->
+        <!-- Call to Action Section -->
+    <div class="row mb-4">
+      <div class="col-md-8">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+      </div>
+      <div class="col-md-4">
+        <a class="btn btn-lg btn-secondary btn-block" href="#">Call to Action</a>
+      </div>
+    </div>
+
+  </div>
+  <!-- /.container -->
+  <!-- Footer -->
+    
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; G King Burger 2021</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  
+
+</body>
+
+</html>
