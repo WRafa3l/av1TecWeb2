@@ -93,10 +93,10 @@
     </div>
 <body>
 <!-- COMEÇO CARRINHO-->
-<h3>Itens</h3><table><tr><td>
-<div id="itens"></div></td>
-<td><div id="remover"></div></td>
-<div>Total do pedido: <span id="totalf"></span> </div>
+<h3>Itens</h3>
+<div id="itens"></div>
+
+<div>Total do pedido: R$<span id="totalf"></span> </div>
 
 <script>
  var totalf = 0; // variável que retorna o total dos produtos que estão na LocalStorage.
@@ -112,7 +112,7 @@
 		 document.getElementById("itens").innerHTML += localStorage.getItem("qtd" + i) + " x ";
 		 document.getElementById("itens").innerHTML += localStorage.getItem("produto" + i);
 		 document.getElementById("itens").innerHTML += " ";
-		 document.getElementById("itens").innerHTML += "- R$ " + localStorage.getItem("valor" + i) + "<hr>";
+		 document.getElementById("itens").innerHTML += "- R$" + localStorage.getItem("valor" + i) + "<hr>";
      
      // calcula o total dos recheios
 		 valor = parseFloat(localStorage.getItem("valor" + i)); // valor convertido com o parseFloat()
@@ -130,9 +130,9 @@
 "> Limpar carrinho </button></td></table>
     <hr><br></li>     
     <td></td></table>
-    <hr><br></li>     
+    <br></li>     
     
-  <hr>
+  
   <!-- fim carrinho-->
 <h4>Endereço de Entrega</h4><br>
 
@@ -146,17 +146,20 @@
     
       <form method="get" action=".">
         <label>   Nome:
-        <input name="nome" type="text" id="nome" size="20" /></label>
+        <input name="nome" type="text" id="nome" size="18" /></label>
         <label>Cep:
         <input name="cep" type="text" id="cep" value="" size="10" maxlength="9" /></label><br>
         <label>Rua:
         <input name="rua" type="text" id="rua" size="20" /></label>
         <label>   Número:
-        <input name="numero" type="text" id="numero" size="4" /></label>
+        <input name="numero" type="text" id="numero" size="6" /></label><br>
         <label>   Bairro:
-        <input name="bairro" type="text" id="bairro" size="20" /></label><br />
-             
+        <input name="bairro" type="text" id="bairro" size="18" /></label>
+        <label>   Compl.:
+        <input name="complemento" type="text" id="numero" size="7" /></label>
+          
       </form>   
+      
       <hr><br>
   <h4>Forma de pagamento</h4><br>
   <div class="wrapper">
@@ -172,14 +175,14 @@
         <input class="radio" name="theradio" id="radio3" type='radio' />
         <label for="radio3">Cartão de Débito</label>
       </div>
-    </div>
+     </div>
   </div>
 
   
 
 
 <div width="100%" align=center class="card-footer">   
-            <a href="#" class="btn btn-primary">Confirmar Compra.</a>
+            <a href="#" class="btn btn-primary">Confirmar Compra</a>
           </div>
     
 
